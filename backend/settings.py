@@ -3,9 +3,15 @@ from datetime import timedelta
 import os
 from dotenv import load_dotenv
 
+# حمّل متغيرات البيئة
 load_dotenv()
 
+# اجعل PyMySQL يعمل كـ MySQLdb (ضروري لـ Render + MySQL)
+import pymysql
+pymysql.install_as_MySQLdb()
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 # ===============================
 # Security & Environment

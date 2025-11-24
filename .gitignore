@@ -1,0 +1,30 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# SQLite database
+db.sqlite3
+
+# Static & media (اختياري حسب طريقة رفعك)
+staticfiles/
+media/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
