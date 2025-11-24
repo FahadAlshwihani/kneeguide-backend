@@ -8,10 +8,10 @@ load_dotenv()
 
 # اجعل PyMySQL يعمل كـ MySQLdb (ضروري لـ Render + MySQL)
 import pymysql
+
 pymysql.install_as_MySQLdb()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # ===============================
 # Security & Environment
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -112,7 +113,6 @@ DATABASES = {
         },
     }
 }
-
 
 # ===============================
 # Password Validation
