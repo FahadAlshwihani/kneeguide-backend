@@ -93,6 +93,8 @@ TEMPLATES = [
 # ===============================
 WSGI_APPLICATION = 'backend.wsgi.application'
 
+# أضف هذا السطر بعد WSGI_APPLICATION مباشرة
+ROOT_URLCONF = 'backend.urls'
 # ===============================
 # Database (MySQL)
 # ===============================
